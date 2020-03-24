@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    margin: auto;
+    width: 50%;
+    height: 97vh;
+    grid-template-columns: 150px 150px 1fr 1fr 150px ;
+    grid-template-rows: 20vh 15vh 10vh 15vh 20vh 1fr;
+}
+
+.titlecontainer{
+    grid-column: 1/6;
+    text-align: center;
+
+    
+}
+
+span{
+     color: #39ABA3;
+}
+
+.containerImage{
+    grid-row: 2/span 7;
+    grid-column: 1/ span 6;
+    background-image: url('./night-1189929_1280.jpg');
+    background-position: -300px -340px;
+    
+}
+.subtitle1{
+    grid-column: 2/3;
+    grid-row: 2;
+    color:white;
+    
+}
+ .subtitle1 > h3{
+     color: #39ABA3;
+ }
+
+
+.subtitle2{
+    grid-column: 2;
+    grid-row: 4;
+    color: white;
+}
+
+.textInfo{
+    grid-column: 4;
+    grid-row: 5;
+    color: white;
+}
+
+.endingTitle{
+    text-transform: uppercase;
+    color: #39ABA3;
+    grid-row: 5;
+    grid-column: 2/3;
+}
+
+.smallerEndingTitle{
+    grid-column: 4;
+    grid-row: 3;
+    color: #39ABA3;
+
+}
